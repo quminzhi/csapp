@@ -1,6 +1,6 @@
 .PHONY: run clean
 
-CFLAGS = -Wall -Werror -std=c11 -O2
+CFLAGS = -g -Wall -Werror -std=c11 -O2
 CC = gcc
 LD = gcc
 

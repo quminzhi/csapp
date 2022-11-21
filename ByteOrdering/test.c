@@ -1,4 +1,5 @@
 #include "bytes.h"
+#include <string.h>
 
 int main() {
   int x;
@@ -15,4 +16,8 @@ int main() {
   show_float(fval);
   printf("Byte ordering of address of val %d:\n", x);
   show_pointer(pval);
+  
+  const char* s = "abcdef";
+  printf("Byte ordering of text %s:\n", s);
+  show_bytes((byte_pointer)s, strlen(s) + 1);
 }
