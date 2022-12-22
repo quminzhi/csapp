@@ -1,0 +1,7 @@
+#!/bin/bash
+
+BIN=$1
+
+CFILE=${BIN}.c
+
+gcc -g -Og -c ${CFILE} && objdump -S ${BIN}.o > ${BIN}.asm
